@@ -1,0 +1,120 @@
+body{
+	/*background-color: black;*/
+	font-family: "Dancing Script";
+	background-color:  #02010a;
+	
+}
+
+header{
+	background: #5b7989;
+	margin : 0 auto;
+	width: 900px;
+	display: flex;
+	justify-content: space-between;
+	/*height:	150px;
+	margin: 0 auto;
+*/
+	border-radius : 10px 10px 0 0 ;
+
+}
+
+header h1{
+	padding: 20px;
+	color: white;
+	text-shadow: 2px 2px #02010a;
+
+	/*float: left;*/
+
+}
+
+#menu-principal{
+	
+	align-self: center;
+	padding: 20px;
+	color: white;
+	
+}
+#menu-principal a{
+	color: white;
+	padding: 10px;
+	font-size: 20px;
+}
+
+#contenido {
+	margin : 0 auto;
+	width: 900px;
+}
+
+
+#contenido1{
+	background: #82c3a6;
+	
+}
+
+#contenido1 img{
+	display:block;
+	margin : 0px auto;
+	width: 80%;
+	height: 70%;
+	padding : 20px;
+	
+}
+
+#contenido2{
+	background: #d5c75f;
+	display: flex;
+	
+}
+#contenido #contenido2 .contenido2block{
+	width: 50%;
+	display: flex;
+	flex-flow: column;
+	
+}
+
+#contenido #contenido2 .contenido2block img{
+	display:block;
+	margin : 20px auto;
+	width: 80%;
+	height: 70%;
+	text-shadow: 2px 2px #02010a;
+	transition: transform , 1S;
+}
+
+#contenido #contenido2 .contenido2block a{
+	text-align: center;
+	color: black;
+
+}
+
+
+#contenido #contenido2 .contenido2block #img-paisaje:hover{
+	transform: rotate(10deg);
+	box-shadow: 2px 2px  #82c3a6;
+
+}
+
+#contenido #contenido2 .contenido2block #img-retrato:hover{
+	transform: translate(20px ,-5px);
+	box-shadow: 20px 5px  #82c3a6;
+}
+
+
+footer{
+	background: #C6d5c5;
+	display: flex;
+	margin : 0 auto;
+	width: 900px;
+	border-radius : 0 0 10px 10px;
+	/*
+	clear:both;
+	width:	100%;
+	height:	150px;
+	position: fixed;
+	bottom: : 0;
+	*/
+}
+
+footer .footerblock{
+	margin: 20px 20px 20px 20px;
+}
