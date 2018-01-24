@@ -5,6 +5,20 @@ body{
 	
 }
 
+
+@keyframes header-animacion {
+	0% {
+		margin-top: 150%;
+	}
+	60% {
+		margin-top: -5%;
+	}
+	100% {
+		margin-top: 0%;
+	}
+}
+
+
 header{
 	background: #5b7989;
 	margin : 0 auto;
@@ -15,6 +29,13 @@ header{
 	margin: 0 auto;
 */
 	border-radius : 10px 10px 0 0 ;
+
+	animation-name: header-animacion;
+	animation-duration: 1s;
+	/*-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;
+	-o-animation-delay: 1s;
+	animation-delay: 1s;*/
 
 }
 
@@ -38,6 +59,7 @@ header h1{
 	color: white;
 	padding: 10px;
 	font-size: 20px;
+	text-decoration:none; 
 }
 
 #contenido {
@@ -63,10 +85,10 @@ header h1{
 #contenido2{
 	background: #d5c75f;
 	display: flex;
-	
+
 }
 #contenido #contenido2 .contenido2block{
-	width: 50%;
+	width: 100%;
 	display: flex;
 	flex-flow: column;
 	
@@ -74,17 +96,18 @@ header h1{
 
 #contenido #contenido2 .contenido2block img{
 	display:block;
-	margin : 20px auto;
+	margin : 30px auto;
 	width: 80%;
 	height: 70%;
 	text-shadow: 2px 2px #02010a;
+	border: black 1px solid;
 	transition: transform , 1S;
 }
 
 #contenido #contenido2 .contenido2block a{
 	text-align: center;
 	color: black;
-
+	padding-bottom: 20px;
 }
 
 
@@ -99,6 +122,35 @@ header h1{
 	box-shadow: 20px 5px  #82c3a6;
 }
 
+
+
+
+
+/*paisajes y retratos */
+
+#contenido #contenido2 .contenido2block #img-1{
+	-webkit-filter:blur(10px);
+	filter:blur(10px);
+}
+
+#contenido #contenido2 .contenido2block #img-2{
+	-webkit-filter:grayscale(100%);
+	filter:grayscale(100%);
+}
+
+#contenido #contenido2 .contenido2block #img-4{
+	-webkit-filter:grayscale(100%);
+	filter:grayscale(100%);
+}
+#contenido #contenido2 .contenido2block #img-6{
+	-webkit-filter:grayscale(100%);
+	filter:grayscale(100%);
+}
+
+#contenido #contenido2 .contenido2block #img-3{
+	-webkit-filter:sepia(90%);
+	filter:sepia(90%);
+}
 
 footer{
 	background: #C6d5c5;
@@ -117,4 +169,51 @@ footer{
 
 footer .footerblock{
 	margin: 20px 20px 20px 20px;
+}
+
+
+@media (max-width: 900px){
+
+header{
+	flex-flow: column;	
+	width: 420px;
+}
+header h1{
+	align-self: center;
+	padding-bottom: 0;
+}
+
+#menu-principal{
+	padding-top: 0;
+}
+
+#contenido {
+	width: 420px;
+}
+
+#contenido #contenido2 .contenido2block{
+	width: 100%;
+	
+}
+#contenido2{
+	display: flex;
+	flex-flow: column;
+	
+
+}
+
+
+
+
+
+footer{
+	width: 420px;
+	display: flex;
+	flex-flow: column;
+}
+
+footer .footerblock{
+	margin: 0 0 0 50px;
+}
+
 }
